@@ -1,0 +1,195 @@
+/*****imported stylesheets*****/
+@import url('normalize.css');
+@import url(https://fonts.googleapis.com/css?family=Quintessential|Merriweather+Sans:400,300,700,300italic,400italic&subset=latin,latin-ext);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+/*****Variables*****/
+$designColor1: #e6e6e6; //background site
+$designColor2: #706a1c; //header and footer
+$designColor3: #d3ca51; //panels
+$designColor4: #e6e6e6; //background content
+
+$fontColor1: #0d0d0d;
+$fontColor2: #fafafa;
+
+$fontFamilyTitles: 'Quintessential', cursive;
+$fontFamilyBody: 'Merriweather Sans', sans-serif;
+
+/*****entire site*****/
+body {
+    margin: 0;
+    padding: 0;
+    color: $fontColor1;
+    font-family: $fontFamilyBody;
+    /*temp*/
+    background-image: url("../images/achtergrond.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    #siteContainer {
+        width: 1024px;
+        margin: 0 auto;
+        background-color: $designColor1;
+        
+        /*****site header*****/
+        > header {
+            height: 150px;
+            color: $fontColor2;
+            background-color: $designColor2;
+
+            > a {
+                float: left;
+            }
+
+            > div {
+                float: left;
+                text-align: center;
+                width: 674px;
+
+                ul {
+                    padding-left: 0;
+
+                    li {
+                        display: inline-block;
+                        width: 20%;
+                        text-align: center;
+
+                        a {
+                            text-decoration: none;
+                            color: $fontColor2;
+                            font-weight:bold;
+
+                            &.activeNav:after {
+                                content: url('../images/navStripe.png');
+                            }
+                        }
+                    }
+                }
+
+                h1 {
+                    line-height: 48px;
+                    font-size:48px;
+                    font-family:$fontFamilyTitles;
+                }
+            }
+        }
+        /*****content*****/
+        div[id*="contentContainer"] {
+            width: 960px;
+            margin: 0 auto;
+            padding: 5px;
+            clear: both;
+            background-color: $designColor4;
+            h2{
+                font-family:$fontFamilyTitles;
+            }
+            #evenementenContainer {
+                width: 100%;
+                overflow: hidden;
+
+                > table {
+                    -moz-box-sizing:border-box;
+                    -webkit-box-sizing:border-box;
+                    box-sizing:border-box;
+                    width: 50%;
+                    padding:5px;
+                    float: left;
+                    display: inline-block;
+                    background-color: $designColor3;
+                    th,td{
+                        display:block;
+                    }
+                    th{
+                        color:$fontColor2;
+                    }
+                }
+
+                article {
+                    padding: 10px;
+                    margin-bottom: 20px;
+
+                    h3 {
+                        color: $fontColor2;
+                    }
+                }
+            }
+            #fotoContainer {
+                width: 100%;
+                overflow: hidden;
+
+                > div {
+                    width: 50%;
+                    overflow: hidden;
+                    float: left;
+                    img {
+                        display: inline-block;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+            #contactContainer {
+                width: 50%;
+                form {
+                    overflow: hidden;
+                    p {
+                    width: 100%;
+                    margin-bottom: 5px;
+                    overflow: hidden;
+                        label {
+                            width: 125px;
+                            float: left;
+                            padding-top: 2px;
+                        }
+                        input[type="text"]{
+                            width: 325px;
+                            float: left;
+                        }
+                        select {
+                            width: 325px;
+                            float: left;
+                        }
+                        textarea{
+                            width: 325px;
+                            float: left;
+                        }
+                        input[type="submit"]{
+                            width: 175px;
+                            float: left;
+                            clear: left;
+                        }
+                    }
+                }
+            }
+        }
+        /*****site footer*****/
+        > footer {
+            background-color: $designColor2;
+            overflow: hidden;
+
+            > ul {
+                padding-left: 0;
+                list-style: none;
+
+                &:nth-child(1) {
+                    float: left;
+                }
+
+                &:nth-child(2) {
+                    float: right;
+                }
+
+                li {
+                    display:inline;
+                    text-align: left;  
+                    margin-left:40px;                  
+                    a {
+                        color:$fontColor2;
+                        font-size:2em;
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+    }
+}

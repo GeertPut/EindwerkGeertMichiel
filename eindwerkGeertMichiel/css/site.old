@@ -1,0 +1,104 @@
+﻿/*****imported stylesheets*****/
+@import url('normalize.css');
+
+/*****entire site*****/
+body {
+    margin: 0;
+    padding: 0;
+    /*temp*/
+    background-image:url("../images/bg_temp.jpg");
+    
+}
+
+#siteContainer {
+    width: 1024px;
+    margin: 0 auto;
+    /*temp*/
+        background-color: darkgrey;
+}
+    /*****site header*****/
+    #siteContainer > header {
+        height: 100px;
+        /*temp*/
+        background-color: red;
+    }
+        #siteContainer > header > a {
+            float: left;
+        }
+        #siteContainer > header > div {
+            float: left;
+            text-align: center;
+            width: 674px;
+        }
+        #siteContainer > header > div ul {
+            padding-left: 0;
+        }
+        #siteContainer > header > div ul li {
+            display: inline-block;
+            width: 20%;
+            text-align: center;
+        }
+        #siteContainer > header > div ul li a{
+            text-decoration: none;
+        }
+        #siteContainer > header > div h1{
+            line-height: 1em;
+        }
+        #siteContainer > header > div ul li a.activeNav{
+            border: 1px solid black;
+        }
+
+        
+    /*****content*****/
+    #siteContainer div[id*="contentContainer"] {
+         width: 960px;
+         margin: 0 auto;
+        padding: 5px;
+         clear:both;
+         /*temp*/
+         background-color: grey;
+     }
+    /*homepage*/
+    #siteContainer div[id*="contentContainer"] #evenementenContainer{
+        width: 100%;
+        overflow: hidden;
+        /*temp*/
+        background-color: green;
+    }
+    #siteContainer div[id*="contentContainer"] #evenementenContainer>div{
+        width: 50%;
+        float: left;
+        display: inline-block;
+        /*temp*/
+        background-color: red;
+    }
+    #siteContainer div[id*="contentContainer"] #evenementenContainer article{
+        padding:10px;
+        margin-bottom: 20px;
+    }
+
+    /*****site footer*****/
+    #siteContainer > footer {
+        /*temp*/
+        background-color: lightgrey;
+        overflow: hidden;
+    }
+    #siteContainer > footer > a {
+        float: right;
+        width: 10%;
+        text-align: right;
+    }
+    #siteContainer > footer > ul{
+        padding-left: 0;
+        list-style: none;
+    }
+    #siteContainer > footer > ul:nth-child(1){
+         float: left;
+     }
+    #siteContainer > footer > ul:nth-child(2){
+        float: right;
+    }
+    #siteContainer > footer > ul li{
+        width: 20%;
+        text-align: left;
+    }

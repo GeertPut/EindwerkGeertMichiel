@@ -1,0 +1,32 @@
+/*****imported stylesheets*****/
+@import url('normalize.css');
+
+/*****entire site*****/
+body {
+    margin: 0;
+    padding: 0;
+    /*temp*/
+    background-image:url("../images/bg_temp.jpg");
+
+}
+
+#siteContainer {
+    width: 1024px;
+    margin: 0 auto;
+    /*temp*/
+    background-color: darkgrey;
+}
+
+h1{
+    text-align: center;
+}
+
+/*****content*****/
+#siteContainer #contentContainer {
+    width: 960px;
+    margin: 0 auto;
+    padding: 5px;
+    clear:both;
+    /*temp*/
+    background-color: grey;
+}
