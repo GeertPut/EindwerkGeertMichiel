@@ -1,7 +1,7 @@
 /*****imported stylesheets*****/
 @import url('normalize.css');
-@import url(https://fonts.googleapis.com/css?family=Quintessential|Merriweather+Sans:400,300,700,300italic,400italic&subset=latin,latin-ext);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Quintessential|Merriweather+Sans:400,300,700,300italic,400italic&subset=latin,latin-ext');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 
 /*****Variables*****/
 $designColor1: #e6e6e6; //background site
@@ -31,7 +31,18 @@ body {
         width: 1024px;
         margin: 0 auto;
         background-color: $designColor1;
-        
+
+        .fullWidthBGColor{
+            position: absolute;
+            left: 0;
+            height: 150px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+            background-color: $designColor1;
+        }
+
+
         /*****site header*****/
         > header {
             height: 150px;
@@ -40,6 +51,12 @@ body {
 
             > a {
                 float: left;
+                img{
+                    height: 150px;
+                    width: auto;
+                    margin-left: 50px;
+                    margin-right: 50px;
+                }
             }
 
             > div {
@@ -49,7 +66,6 @@ body {
 
                 ul {
                     padding-left: 0;
-
                     li {
                         display: inline-block;
                         width: 20%;
@@ -87,18 +103,21 @@ body {
             #evenementenContainer {
                 width: 100%;
                 overflow: hidden;
-
+                border-radius: 10px;
+                background-color: $designColor3;
                 > table {
                     -moz-box-sizing:border-box;
                     -webkit-box-sizing:border-box;
                     box-sizing:border-box;
                     width: 50%;
-                    padding:5px;
+                    padding:10px;
                     float: left;
                     display: inline-block;
-                    background-color: $designColor3;
                     th,td{
                         display:block;
+                        a{
+                            padding-right: 10px;
+                        }
                     }
                     th{
                         color:$fontColor2;
@@ -159,6 +178,41 @@ body {
                             clear: left;
                         }
                     }
+                }
+            }
+        }
+        #contentContainerManageEvents,#contentContainerChangeEvent{
+            h3{
+                color: $fontColor2;
+                text-align: center;
+            }
+            form{
+                clear: both;
+                padding: 10px;
+                ul{
+                    list-style: none;
+                    padding-left: 0;
+                    li{
+                        width: 100%;
+                        text-align: center;
+                        input{
+                            display: inline-block;
+                            width: 300px;
+                            text-align: center;
+                        }
+                        textarea{
+                            display: inline-block;
+                            width: 400px;
+                        }
+                    }
+                }
+            }
+        }
+        #backOfficeNav{
+            ul{
+                list-style: none;
+                li{
+                    display: inline-block;
                 }
             }
         }

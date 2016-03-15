@@ -9,7 +9,11 @@ $activeNav = 0;
 
 ?>
 <!--site header-->
-<?php include_once "shared/Header.php" ?>
+<?php
+    include_once "shared/Header.php" ;
+    include_once "shared/BackOfficeNav.php"
+?>
+
     <div id="contentContainerBackoffice">
         <article>
             <h2>Evenementen</h2><a href="ManageEvents.php">Beheren</a>

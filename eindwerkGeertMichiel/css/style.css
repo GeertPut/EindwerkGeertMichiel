@@ -1,7 +1,7 @@
 /*****imported stylesheets*****/
 @import url("normalize.css");
-@import url(https://fonts.googleapis.com/css?family=Quintessential|Merriweather+Sans:400,300,700,300italic,400italic&subset=latin,latin-ext);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Quintessential|Merriweather+Sans:400,300,700,300italic,400italic&subset=latin,latin-ext");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 /*****Variables*****/
 /*****entire site*****/
 body {
@@ -13,188 +13,160 @@ body {
   background-image: url("../images/achtergrond.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-}
-
-body #siteContainer {
-  width: 1024px;
-  margin: 0 auto;
-  background-color: #e6e6e6;
-  /*****site header*****/
-  /*****content*****/
-  /*****site footer*****/
-}
-
-body #siteContainer > header {
-  height: 150px;
-  color: #fafafa;
-  background-color: #706a1c;
-}
-
-body #siteContainer > header > a {
-  float: left;
-}
-
-body #siteContainer > header > div {
-  float: left;
-  text-align: center;
-  width: 674px;
-}
-
-body #siteContainer > header > div ul {
-  padding-left: 0;
-}
-
-body #siteContainer > header > div ul li {
-  display: inline-block;
-  width: 20%;
-  text-align: center;
-}
-
-body #siteContainer > header > div ul li a {
-  text-decoration: none;
-  color: #fafafa;
-  font-weight: bold;
-}
-
-body #siteContainer > header > div ul li a.activeNav:after {
-  content: url("../images/navStripe.png");
-}
-
-body #siteContainer > header > div h1 {
-  line-height: 48px;
-  font-size: 48px;
-  font-family: "Quintessential", cursive;
-}
-
-body #siteContainer div[id*="contentContainer"] {
-  width: 960px;
-  margin: 0 auto;
-  padding: 5px;
-  clear: both;
-  background-color: #e6e6e6;
-}
-
-body #siteContainer div[id*="contentContainer"] h2 {
-  font-family: "Quintessential", cursive;
-}
-
-body #siteContainer div[id*="contentContainer"] #evenementenContainer {
-  width: 100%;
-  overflow: hidden;
-}
-
-body #siteContainer div[id*="contentContainer"] #evenementenContainer > table {
-  box-sizing: border-box;
-  width: 50%;
-  padding: 5px;
-  float: left;
-  display: inline-block;
-  background-color: #d3ca51;
-}
-
-body #siteContainer div[id*="contentContainer"] #evenementenContainer > table th, body #siteContainer div[id*="contentContainer"] #evenementenContainer > table td {
-  display: block;
-}
-
-body #siteContainer div[id*="contentContainer"] #evenementenContainer > table th {
-  color: #fafafa;
-}
-
-body #siteContainer div[id*="contentContainer"] #evenementenContainer article {
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-body #siteContainer div[id*="contentContainer"] #evenementenContainer article h3 {
-  color: #fafafa;
-}
-
-body #siteContainer div[id*="contentContainer"] #fotoContainer {
-  width: 100%;
-  overflow: hidden;
-}
-
-body #siteContainer div[id*="contentContainer"] #fotoContainer > div {
-  width: 50%;
-  overflow: hidden;
-  float: left;
-}
-
-body #siteContainer div[id*="contentContainer"] #fotoContainer > div img {
-  display: inline-block;
-  margin-bottom: 5px;
-}
-
-body #siteContainer div[id*="contentContainer"] #contactContainer {
-  width: 50%;
-}
-
-body #siteContainer div[id*="contentContainer"] #contactContainer form {
-  overflow: hidden;
-}
-
-body #siteContainer div[id*="contentContainer"] #contactContainer form p {
-  width: 100%;
-  margin-bottom: 5px;
-  overflow: hidden;
-}
-
-body #siteContainer div[id*="contentContainer"] #contactContainer form p label {
-  width: 125px;
-  float: left;
-  padding-top: 2px;
-}
-
-body #siteContainer div[id*="contentContainer"] #contactContainer form p input[type="text"] {
-  width: 325px;
-  float: left;
-}
-
-body #siteContainer div[id*="contentContainer"] #contactContainer form p select {
-  width: 325px;
-  float: left;
-}
-
-body #siteContainer div[id*="contentContainer"] #contactContainer form p textarea {
-  width: 325px;
-  float: left;
-}
-
-body #siteContainer div[id*="contentContainer"] #contactContainer form p input[type="submit"] {
-  width: 175px;
-  float: left;
-  clear: left;
-}
-
-body #siteContainer > footer {
-  background-color: #706a1c;
-  overflow: hidden;
-}
-
-body #siteContainer > footer > ul {
-  padding-left: 0;
-  list-style: none;
-}
-
-body #siteContainer > footer > ul:nth-child(1) {
-  float: left;
-}
-
-body #siteContainer > footer > ul:nth-child(2) {
-  float: right;
-}
-
-body #siteContainer > footer > ul li {
-  display: inline;
-  text-align: left;
-  margin-left: 40px;
-}
-
-body #siteContainer > footer > ul li a {
-  color: #fafafa;
-  font-size: 2em;
-  text-decoration: none;
-}
+  background-attachment: fixed; }
+  body #siteContainer {
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #e6e6e6;
+    /*****site header*****/
+    /*****content*****/
+    /*****site footer*****/ }
+    body #siteContainer .fullWidthBGColor {
+      position: absolute;
+      left: 0;
+      height: 150px;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.5;
+      background-color: #e6e6e6; }
+    body #siteContainer > header {
+      height: 150px;
+      color: #fafafa;
+      background-color: #706a1c; }
+      body #siteContainer > header > a {
+        float: left; }
+        body #siteContainer > header > a img {
+          height: 150px;
+          width: auto;
+          margin-left: 50px;
+          margin-right: 50px; }
+      body #siteContainer > header > div {
+        float: left;
+        text-align: center;
+        width: 674px; }
+        body #siteContainer > header > div ul {
+          padding-left: 0; }
+          body #siteContainer > header > div ul li {
+            display: inline-block;
+            width: 20%;
+            text-align: center; }
+            body #siteContainer > header > div ul li a {
+              text-decoration: none;
+              color: #fafafa;
+              font-weight: bold; }
+              body #siteContainer > header > div ul li a.activeNav:after {
+                content: url("../images/navStripe.png"); }
+        body #siteContainer > header > div h1 {
+          line-height: 48px;
+          font-size: 48px;
+          font-family: "Quintessential", cursive; }
+    body #siteContainer div[id*="contentContainer"] {
+      width: 960px;
+      margin: 0 auto;
+      padding: 5px;
+      clear: both;
+      background-color: #e6e6e6; }
+      body #siteContainer div[id*="contentContainer"] h2 {
+        font-family: "Quintessential", cursive; }
+      body #siteContainer div[id*="contentContainer"] #evenementenContainer {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: #d3ca51; }
+        body #siteContainer div[id*="contentContainer"] #evenementenContainer > table {
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          width: 50%;
+          padding: 10px;
+          float: left;
+          display: inline-block; }
+          body #siteContainer div[id*="contentContainer"] #evenementenContainer > table th, body #siteContainer div[id*="contentContainer"] #evenementenContainer > table td {
+            display: block; }
+            body #siteContainer div[id*="contentContainer"] #evenementenContainer > table th a, body #siteContainer div[id*="contentContainer"] #evenementenContainer > table td a {
+              padding-right: 10px; }
+          body #siteContainer div[id*="contentContainer"] #evenementenContainer > table th {
+            color: #fafafa; }
+        body #siteContainer div[id*="contentContainer"] #evenementenContainer article {
+          padding: 10px;
+          margin-bottom: 20px; }
+          body #siteContainer div[id*="contentContainer"] #evenementenContainer article h3 {
+            color: #fafafa; }
+      body #siteContainer div[id*="contentContainer"] #fotoContainer {
+        width: 100%;
+        overflow: hidden; }
+        body #siteContainer div[id*="contentContainer"] #fotoContainer > div {
+          width: 50%;
+          overflow: hidden;
+          float: left; }
+          body #siteContainer div[id*="contentContainer"] #fotoContainer > div img {
+            display: inline-block;
+            margin-bottom: 5px; }
+      body #siteContainer div[id*="contentContainer"] #contactContainer {
+        width: 50%; }
+        body #siteContainer div[id*="contentContainer"] #contactContainer form {
+          overflow: hidden; }
+          body #siteContainer div[id*="contentContainer"] #contactContainer form p {
+            width: 100%;
+            margin-bottom: 5px;
+            overflow: hidden; }
+            body #siteContainer div[id*="contentContainer"] #contactContainer form p label {
+              width: 125px;
+              float: left;
+              padding-top: 2px; }
+            body #siteContainer div[id*="contentContainer"] #contactContainer form p input[type="text"] {
+              width: 325px;
+              float: left; }
+            body #siteContainer div[id*="contentContainer"] #contactContainer form p select {
+              width: 325px;
+              float: left; }
+            body #siteContainer div[id*="contentContainer"] #contactContainer form p textarea {
+              width: 325px;
+              float: left; }
+            body #siteContainer div[id*="contentContainer"] #contactContainer form p input[type="submit"] {
+              width: 175px;
+              float: left;
+              clear: left; }
+    body #siteContainer #contentContainerManageEvents h3, body #siteContainer #contentContainerChangeEvent h3 {
+      color: #fafafa;
+      text-align: center; }
+    body #siteContainer #contentContainerManageEvents form, body #siteContainer #contentContainerChangeEvent form {
+      clear: both;
+      padding: 10px; }
+      body #siteContainer #contentContainerManageEvents form ul, body #siteContainer #contentContainerChangeEvent form ul {
+        list-style: none;
+        padding-left: 0; }
+        body #siteContainer #contentContainerManageEvents form ul li, body #siteContainer #contentContainerChangeEvent form ul li {
+          width: 100%;
+          text-align: center; }
+          body #siteContainer #contentContainerManageEvents form ul li input, body #siteContainer #contentContainerChangeEvent form ul li input {
+            display: inline-block;
+            width: 300px;
+            text-align: center; }
+          body #siteContainer #contentContainerManageEvents form ul li textarea, body #siteContainer #contentContainerChangeEvent form ul li textarea {
+            display: inline-block;
+            width: 400px; }
+    body #siteContainer #backOfficeNav ul {
+      list-style: none; }
+      body #siteContainer #backOfficeNav ul li {
+        display: inline-block; }
+    body #siteContainer > footer {
+      background-color: #706a1c;
+      overflow: hidden; }
+      body #siteContainer > footer > ul {
+        padding-left: 0;
+        list-style: none; }
+        body #siteContainer > footer > ul:nth-child(1) {
+          float: left; }
+        body #siteContainer > footer > ul:nth-child(2) {
+          float: right; }
+        body #siteContainer > footer > ul li {
+          display: inline;
+          text-align: left;
+          margin-left: 40px; }
+          body #siteContainer > footer > ul li a {
+            color: #fafafa;
+            font-size: 2em;
+            text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
