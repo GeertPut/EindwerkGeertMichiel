@@ -4,10 +4,11 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 
 /*****Variables*****/
-$designColor1: #e6e6e6; //background site
-$designColor2: #706a1c; //header and footer
-$designColor3: #d3ca51; //panels
-$designColor4: #e6e6e6; //background content
+$designColor1: #fafafa; //background site
+$designColor2: #BE8E67; //header and footer
+$designColor3: #E2BB9B; //panels
+$designColor4: #fafafa; //background content
+$designGradient1: linear-gradient(to right,transparentize($designColor2,.1), $designColor2, $designColor2, transparentize($designColor2,.1));
 
 $fontColor1: #0d0d0d;
 $fontColor2: #fafafa;
@@ -30,33 +31,27 @@ body {
     #siteContainer {
         width: 1024px;
         margin: 0 auto;
-        background-color: $designColor1;
+        /*background-color: $designColor1;*/
+        background-color: transparentize($designColor1,.075);
 
-        .fullWidthBGColor{
+        /*.fullWidthBGColor {
             position: absolute;
             left: 0;
-            height: 150px;
+            height: 170px;
             width: 100%;
             z-index: -1;
             opacity: 0.5;
             background-color: $designColor1;
-        }
-
-
+        }*/
         /*****site header*****/
         > header {
-            height: 150px;
+            height: 170px;
             color: $fontColor2;
-            background-color: $designColor2;
+            background: $designGradient1;
 
             > a {
                 float: left;
-                img{
-                    height: 150px;
-                    width: auto;
-                    margin-left: 50px;
-                    margin-right: 50px;
-                }
+                margin-top: 10px;
             }
 
             > div {
@@ -66,6 +61,7 @@ body {
 
                 ul {
                     padding-left: 0;
+
                     li {
                         display: inline-block;
                         width: 20%;
@@ -74,10 +70,11 @@ body {
                         a {
                             text-decoration: none;
                             color: $fontColor2;
-                            font-weight:bold;
+                            font-weight: bold;
+                            font-size: 1.25em;
 
                             &.activeNav:after {
-                                content: url('../images/navStripe.png');
+                                content: url('../images/navStripe4.png');
                             }
                         }
                     }
@@ -85,8 +82,8 @@ body {
 
                 h1 {
                     line-height: 48px;
-                    font-size:48px;
-                    font-family:$fontFamilyTitles;
+                    font-size: 48px;
+                    font-family: $fontFamilyTitles;
                 }
             }
         }
@@ -96,31 +93,57 @@ body {
             margin: 0 auto;
             padding: 5px;
             clear: both;
-            background-color: $designColor4;
-            h2{
-                font-family:$fontFamilyTitles;
+            overflow: hidden;
+            /*background-color: $designColor4;*/
+            background-color: transparent;
+
+            h2 {
+                font-family: $fontFamilyTitles;
+                font-size: 1.75em;
+                letter-spacing: 0.04em;
+
+                i {
+                    font-size: 0.75em;
+                    position: relative;
+                    bottom: 2px;
+                }
+
+                &#title {
+                    font-size: 2.25em;
+                    margin-top: 0;
+
+                    i {
+                        font-size: 0.75em;
+                    }
+                }
             }
+
             #evenementenContainer {
                 width: 100%;
                 overflow: hidden;
                 border-radius: 10px;
-                background-color: $designColor3;
+                /*background-color: $designColor3;*/
+                background: $designGradient1;
+
                 > table {
-                    -moz-box-sizing:border-box;
-                    -webkit-box-sizing:border-box;
-                    box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
                     width: 50%;
-                    padding:10px;
+                    padding: 10px;
                     float: left;
                     display: inline-block;
-                    th,td{
-                        display:block;
-                        a{
+
+                    th, td {
+                        display: block;
+
+                        a {
                             padding-right: 10px;
                         }
                     }
-                    th{
-                        color:$fontColor2;
+
+                    th {
+                        color: $fontColor2;
                     }
                 }
 
@@ -133,6 +156,7 @@ body {
                     }
                 }
             }
+
             #fotoContainer {
                 width: 100%;
                 overflow: hidden;
@@ -141,66 +165,132 @@ body {
                     width: 50%;
                     overflow: hidden;
                     float: left;
+
                     img {
                         display: inline-block;
                         margin-bottom: 5px;
                     }
                 }
             }
+
             #contactContainer {
                 width: 50%;
+                float: left;
+
+                li {
+                    list-style: none;
+                    color: red;
+
+                    i {
+                        color: red;
+                    }
+                }
+
                 form {
                     overflow: hidden;
+
                     p {
-                    width: 100%;
-                    margin-bottom: 5px;
-                    overflow: hidden;
+                        width: 100%;
+                        margin-bottom: 5px;
+                        overflow: hidden;
+
                         label {
                             width: 125px;
                             float: left;
                             padding-top: 2px;
                         }
-                        input[type="text"]{
+
+                        input[type="text"] {
                             width: 325px;
                             float: left;
                         }
+
                         select {
                             width: 325px;
                             float: left;
                         }
-                        textarea{
+
+                        textarea {
                             width: 325px;
                             float: left;
                         }
-                        input[type="submit"]{
-                            width: 175px;
-                            float: left;
-                            clear: left;
-                        }
+                    }
+
+                    input[type="submit"] {
+                        width: 175px;
+                        float: left;
+                        clear: left;
+                        margin-top: 10px;
+                        margin-bottom: 30px;
+                        margin-left: 125px;
                     }
                 }
             }
+
+            #openingsurenContainer {
+                width: 40%;
+                float: left;
+                margin-left: 60px;
+
+                p {
+                    &:first-of-type {
+                        padding-top: 17px;
+                    }
+                    label{
+                        display:inline-block;
+                        width:200px;
+                    }
+                }
+            }
+
+            #contactgegevensContainer {
+                text-align: center;
+                width: 100%;
+                float: left;
+
+                p {
+                    &:first-of-type {
+                        padding-top: 17px;
+                    }
+                    a{
+                        color:$fontColor1;
+                    }
+                }
+
+                iframe {
+                    border: none;
+                    width: 100%;
+                    height: 400px;
+                    margin-top: 15px;
+                }
+            }
         }
-        #contentContainerManageEvents,#contentContainerChangeEvent{
-            h3{
+
+        #contentContainerManageEvents, #contentContainerChangeEvent {
+            h3 {
                 color: $fontColor2;
                 text-align: center;
             }
-            form{
+
+            form {
                 clear: both;
                 padding: 10px;
-                ul{
+
+                ul {
                     list-style: none;
                     padding-left: 0;
-                    li{
+
+                    li {
                         width: 100%;
                         text-align: center;
-                        input{
+
+                        input {
                             display: inline-block;
                             width: 300px;
                             text-align: center;
                         }
-                        textarea{
+
+                        textarea {
                             display: inline-block;
                             width: 400px;
                         }
@@ -208,17 +298,23 @@ body {
                 }
             }
         }
-        #backOfficeNav{
-            ul{
+
+        #contentContainerMenu {
+            
+        }
+
+        #backOfficeNav {
+            ul {
                 list-style: none;
-                li{
+
+                li {
                     display: inline-block;
                 }
             }
         }
         /*****site footer*****/
         > footer {
-            background-color: $designColor2;
+            background: $designGradient1;
             overflow: hidden;
 
             > ul {
@@ -234,13 +330,14 @@ body {
                 }
 
                 li {
-                    display:inline;
-                    text-align: left;  
-                    margin-left:40px;                  
+                    display: inline;
+                    text-align: left;
+                    margin-left: 40px;
+
                     a {
-                        color:$fontColor2;
-                        font-size:2em;
-                        text-decoration:none;
+                        color: $fontColor2;
+                        font-size: 2em;
+                        text-decoration: none;
                     }
                 }
             }

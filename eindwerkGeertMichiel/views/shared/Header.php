@@ -21,7 +21,7 @@
         <!--site header-->
         <div class="fullWidthBGColor"></div>
         <header>
-            <a href="home.php"><img src="../images/logo-eindwerkGeertMichiel.png" alt="logo" /></a>
+            <a href="home.php"><img src="../images/logo-eindwerkGeertMichiel2.png" alt="logo" /></a>
             <div>
                 <nav>
                     <ul>

@@ -10,7 +10,7 @@ include_once 'database/shared/openDbConnection.php';
 <div id="contentContainer">
 	<div id="fotoContainer">
 		<div>
-		    <h2>Zaak</h2>
+		    <h2><i class="fa fa-home"></i> Zaak</h2>
 		    <a href="../images/brasserie.jpg" data-lightbox="zaak"><img src="../images/brasserie-klein.jpg" alt="brasserie"></a>
 		    <a href="../images/brasserie2.jpg" data-lightbox="zaak"><img src="../images/brasserie2-klein.jpg" alt="brasserie 2"></a>
 		    <a href="../images/brasserie3.jpg" data-lightbox="zaak"><img src="../images/brasserie3-klein.jpg" alt="brasserie 3"></a>
@@ -21,7 +21,7 @@ include_once 'database/shared/openDbConnection.php';
 	    	<a href="../images/brasserie8.jpg" data-lightbox="zaak"><img src="../images/brasserie8-klein.jpg" alt="brasserie 8"></a>
 	    </div>
 	    <div>
-	    	<h2>Gerechten</h2>
+	    	<h2><i class="fa fa-coffee"></i> Gerechten</h2>
 	    	<a href="../images/gerecht.jpg" data-lightbox="gerecht"><img src="../images/gerecht-klein.jpg" alt="gerecht"></a>
 	    	<a href="../images/gerecht2.jpg" data-lightbox="gerecht"><img src="../images/gerecht2-klein.jpg" alt="gerecht 2"></a>
 	    	<a href="../images/gerecht3.jpg" data-lightbox="gerecht"><img src="../images/gerecht3-klein.jpg" alt="gerecht 3"></a>

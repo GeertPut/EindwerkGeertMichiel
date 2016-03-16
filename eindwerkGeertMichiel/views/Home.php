@@ -9,7 +9,7 @@ $activeNav = 1;
 <!--site content-->
 <div id="contentContainerHome">
     <article>
-        <h2>Brasserie "Name to be decided"</h2>
+        <h2 id="title"><i class="fa fa-cutlery"></i> Brasserie "Het fluitende keteltje"</h2>
         <p>Welkom bij het gezelligste plekje in belgie.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium adipisci at aut commodi
             consectetur culpa cumque earum, est eveniet ex excepturi fuga id illo impedit laudantium modi mollitia nam
@@ -17,7 +17,7 @@ $activeNav = 1;
             necessitatibus nulla! Dolorem ex mollitia optio repudiandae tempora tenetur!</p>
     </article>
     <article>
-        <h2>Evenementen</h2>
+        <h2><i class="fa fa-calendar-minus-o"></i> Evenementen</h2>
         <p>
             Volgende evenementen staan binnenkort op het programma.
         </p>
@@ -52,7 +52,7 @@ $activeNav = 1;
         </div>
     </article>
     <article>
-        <h2>Over ons</h2>
+        <h2><i class="fa fa-spoon"></i> Over ons</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium adipisci at aut commodi
             consectetur culpa cumque earum, est eveniet ex excepturi fuga id illo impedit laudantium modi mollitia nam
             nisi, perferendis, perspiciatis quo repudiandae sapiente suscipit ut veniam vero? Accusantium,

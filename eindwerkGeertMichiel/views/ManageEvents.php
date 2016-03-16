@@ -56,9 +56,7 @@ $activeNav = 0;
                     <input type="text" placeholder="Titel" name="title" required />
                 </li>
                 <li>
-                    <textarea placeholder="Beschrijving" rows="10" name="description" required>
-
-                    </textarea>
+                    <textarea rows="10" name="description" placeholder="Beschrijving van het event" required></textarea>
                 </li>
                 <li>
                     <input type="datetime" placeholder="YYYY-MM-DD HH:MM:SS" name="datetime" pattern="[2][0-1][0-9][0-9][-][0-1][0-9][-][0-3][0-9]\s[1-2][0-9][:][0-6][0-9][:][0-6][0-9]" required/>

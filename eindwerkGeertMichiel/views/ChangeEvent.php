@@ -28,9 +28,7 @@ $activeNav = 0;
                             <input type="text" value="<?php echo $event['title'] ?>" name="title" required />
                         </li>
                         <li>
-                        <textarea placeholder="Beschrijving" rows="10" name="description" required>
-                <?php echo $event['description'] ?>
-            </textarea>
+                        <textarea placeholder="Beschrijving" rows="10" name="description" required><?php echo $event['description'] ?></textarea>
                         </li>
                         <li>
                             <input type="text" value="<?php echo $event['start'] ?>" name="datetime" pattern="[2][0-1][0-9][0-9][-][0-1][0-9][-][0-3][0-9]\s[1-2][0-9][:][0-6][0-9][:][0-6][0-9]" required />
